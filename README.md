@@ -35,4 +35,4 @@ git checkout -b nombre-apellido
 - Aplicar la metodología BEM en un ejemplo real  
 
 ## 🌐 **Ver la página online**
-🔗 **[GitHub Pages](https://TU-USUARIO.github.io/css-moderno-colaborativo/)**
+🔗 **[GitHub Pages](https://pw1-2025.github.io/tarea3/)**
