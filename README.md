@@ -9,10 +9,10 @@ Explorar diferentes formas de estilizar una página web y permitir que cada alum
 
 ## 🚀 **Cómo Contribuir**  
 1. **Clona el repositorio:**  
-git clone https://github.com/PW1-2025/tarea3.git
+`git clone https://github.com/PW1-2025/tarea3.git`
 
 2. **Crea un branch con tu nombre:**  
-git checkout -b nombre-apellido
+`git checkout -b nombre-apellido`
 
 3. **Agrega/modifica un archivo en la carpeta `/ejercicios` según la técnica asignada.**  
 4. **Haz un commit y envía un pull request.**  
