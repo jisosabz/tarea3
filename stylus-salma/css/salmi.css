@@ -1,0 +1,182 @@
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8f9fa;
+  color: #2b2d42;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #3a0ca3;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4361ee;
+  margin-bottom: 1rem;
+}
+.descripcion-frontier {
+  font-size: 1.125rem;
+  color: #4a4e69;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+.opciones-precio {
+  display: inline-flex;
+  background: #fff;
+  padding: 6px;
+  border-radius: 50px;
+  margin: 20px 0 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.opcion {
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.opcion.mensual {
+  background-color: #4361ee;
+  color: #fff;
+}
+.opcion.anual {
+  color: #4a4e69;
+}
+.divisor {
+  border: none;
+  height: 1px;
+  background-color: rgba(0,0,0,0.1);
+  margin: 20px 0 40px;
+}
+.planes-contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.plan-precio {
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+.plan-precio:hover {
+  transform: translateY(-5px);
+}
+.plan-precio.gratis {
+  border-top: 4px solid #8e9aaf;
+}
+.plan-precio:nth-child(2) {
+  border-top: 4px solid #4361ee;
+}
+.plan-precio:nth-child(3) {
+  border-top: 4px solid #7209b7;
+}
+.encabezado-plan {
+  margin-bottom: 16px;
+}
+.nombre-plan {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2b2d42;
+}
+.precio-plan {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2b2d42;
+}
+.precio-plan.gratis {
+  color: #4a4e69;
+}
+.info-facturacion {
+  display: block;
+  font-size: 0.875rem;
+  color: #8e9aaf;
+  margin-bottom: 16px;
+}
+.boton-plan {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #4361ee;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  margin: 24px 0;
+  transition: background-color 0.2s;
+}
+.boton-plan:hover {
+  background-color: #3a0ca3;
+}
+.boton-plan.contacto {
+  background-color: #fff;
+  color: #4361ee;
+  border: 2px solid #4361ee;
+}
+.boton-plan.contacto:hover {
+  background-color: #4361ee;
+  color: #fff;
+}
+.caracteristicas-plan {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.caracteristicas-plan li {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 24px;
+  color: #4a4e69;
+}
+.caracteristicas-plan li:before {
+  content: "•";
+  color: #4361ee;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.info-clima {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding: 16px 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  color: #4a4e69;
+  font-size: 0.875rem;
+}
+@media (max-width: 768px) {
+  .planes-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+  .plan-precio {
+    max-width: 100%;
+  }
+  .info-clima {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
