@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratchpad Pricing</title>
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- navbar: Define una barra de navegación en Bootstrap -->
+        <!-- navbar-expand-lg: Indica que la barra de navegación se expandirá en pantallas grandes (lg) y se colapsará en móviles -->
+        <!-- navbar-light: Establece colores claros para los elementos de la barra -->
+        <!-- bg-light: Aplica un fondo de color claro a la barra de navegación -->
+        <div class="container">
+            <a class="navbar-brand" href="#">Scratchpad</a>
+            <!-- navbar-brand: Define el logotipo o nombre de la marca en la barra de navegación -->
+            <!-- Botón para colapsar el menú en dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <!-- navbar-toggler: Estiliza el botón para abrir/cerrar el menú en pantallas pequeñas -->
+                <!-- data-bs-toggle="collapse": Indica que el botón activará un elemento colapsable -->
+                <!-- data-bs-target="#navbarNav": Especifica el ID del elemento que se colapsará -->
+                <span class="navbar-toggler-icon"></span>
+                <!-- navbar-toggler-icon: Ícono visual para indicar el botón de menú -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- collapse: Indica que este elemento será colapsable -->
+                <!-- navbar-collapse: Aplica estilos específicos de Bootstrap para manejar el colapso -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- navbar-nav: Contenedor de elementos de navegación -->
+                    <!-- ms-auto: Empuja los elementos a la derecha utilizando "margin-start auto" -->
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <!-- nav-item: Define un elemento dentro del menú de navegación -->
+                    <!-- nav-link: Aplica estilos a los enlaces de navegación -->
+                    <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <div class="text-center">
+                        <a href="../index.html" class="btn btn-secondary">Volver</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Precios -->
+    <section class="container my-5">
+        <!-- container: Define un contenedor centralizado con márgenes automáticos -->
+        <!-- my-5: Agrega margen vertical (arriba y abajo) de nivel 5 -->
+        <div class="text-center">
+            <!-- text-center: Centra el texto horizontalmente -->
+            <h2>Planes y Precios</h2>
+            <p>Elige el plan que mejor se adapte a ti.</p>
+        </div>
+        <div class="row text-center">
+            <!-- row: Crea una fila en el sistema de cuadrícula de Bootstrap -->
+            <div class="col-md-4">
+                <!-- col-md-4: Indica que este elemento ocupará 4 columnas en pantallas medianas o más grandes -->
+                <div class="card">
+                    <!-- card: Componente de tarjeta de Bootstrap -->
+                    <div class="card-header">Básico</div>
+                    <!-- card-header: Agrega un encabezado en la tarjeta -->
+                    <div class="card-body">
+                        <!-- card-body: Contiene el contenido principal de la tarjeta -->
+                        <h3>$0</h3>
+                        <p>Funcionalidades esenciales.</p>
+                        <a href="#" class="btn btn-primary">Elegir</a>
+                        <!-- btn: Aplica estilos de botón -->
+                        <!-- btn-primary: Define un botón con el color primario de Bootstrap -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Profesional</div>
+                    <div class="card-body">
+                        <h3>$9/mes</h3>
+                        <p>Más herramientas y opciones avanzadas.</p>
+                        <a href="#" class="btn btn-primary">Elegir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Empresas</div>
+                    <div class="card-body">
+                        <h3>$29/mes</h3>
+                        <p>Para equipos y organizaciones.</p>
+                        <a href="#" class="btn btn-primary">Elegir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Comparación de Planes -->
+    <section class="container my-5">
+        <h2 class="text-center">Comparación de Planes</h2>
+        <table class="table table-bordered text-center">
+            <!-- table: Crea una tabla con estilos de Bootstrap -->
+            <!-- table-bordered: Agrega bordes a toda la tabla -->
+            <!-- text-center: Centra el contenido de la tabla -->
+            <thead class="table-light">
+                <!-- table-light: Aplica un fondo claro a la cabecera -->
+                <tr>
+                    <th>Característica</th>
+                    <th>Básico</th>
+                    <th>Profesional</th>
+                    <th>Empresas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Acceso ilimitado</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Soporte prioritario</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Integraciones avanzadas</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección de Reseñas -->
+    <section class="container my-5 text-center">
+        <h2>Reseñas</h2>
+        <div class="row">
+            <div class="col-md-6 ">
+                <!-- offset-md-3: Desplaza la columna 3 espacios a la derecha en pantallas medianas -->
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="rounded-circle mb-3" alt="Foto de usuario" style="height: 100px;">
+                        <!-- rounded-circle: Hace la imagen completamente redonda -->
+                        <p>"Excelente plataforma, me ha ayudado a mejorar mi productividad."</p>
+                        <h5>- Usuario Satisfecho</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <!-- offset-md-3: Desplaza la columna 3 espacios a la derecha en pantallas medianas -->
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="rounded-circle mb-3" alt="Foto de usuario" style="height: 100px;">
+                        <!-- rounded-circle: Hace la imagen completamente redonda -->
+                        <p>"Excelente plataforma, me ha ayudado a mejorar mi productividad."</p>
+                        <h5>- Usuario Satisfecho</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Información Adicional -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Scratchpad. Todos los derechos reservados.</p>
+        <p><a href="#" class="text-white">Términos y Condiciones</a> | <a href="#" class="text-white">Política de Privacidad</a></p>
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
