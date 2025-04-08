@@ -1,49 +1,107 @@
 @use "sass:color";
 
 $primary-color: #007bff;
+$background-color: #f4f4f4;
 $text-color: #333;
+$shadow-color: rgba(0, 0, 0, 0.1);
 
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+
+  h1 {
     margin: 0;
-    padding: 0;
+  }
+
+  .subtitulo {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
 }
 
 .pricing {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
 }
 
 .plan {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 15px $shadow-color;
+  padding: 2rem;
+  width: 280px;
+  transition: transform 0.2s ease-in-out;
 
-    h2 {
-        color: $text-color;
-    }
+  &:hover {
+    transform: translateY(-5px);
+  }
 
-    .price {
-        font-size: 1.5em;
-        color: $text-color;
-    }
+  h2 {
+    margin-bottom: 0.5rem;
+    color: $primary-color;
+  }
 
-    button {
-        background-color: color.mix(black, $primary-color, 10%);
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        
-        &:hover {
-            background-color: color.mix(black, $primary-color, 20%);
-        }
+  .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+
+    li {
+      margin: 0.5rem 0;
     }
+  }
+
+  button {
+    background-color: color.mix(black, $primary-color, 10%);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: color.mix(black, $primary-color, 20%);
+    }
+  }
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    width: 90%;
+  }
 }
